@@ -16,7 +16,6 @@
 (load "my-key-bindings.el")
 (load "my-backups.el")
 (load "my-whitespace.el")
-(load "my-gpicker.el")
 
 ;;; Hide unnecessary interface features
 (setq inhibit-startup-message t)
