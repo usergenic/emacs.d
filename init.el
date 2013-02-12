@@ -8,6 +8,8 @@
 
 (setq load-path (add-to-list 'load-path "~/.emacs.d/my/"))
 
+(require 'ido)
+
 (load "my-package.el")
 (load "my-auto-complete.el")
 (load "my-textmate.el")
