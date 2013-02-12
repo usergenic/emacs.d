@@ -7,7 +7,6 @@
 ;;; Code:
 
 (setq load-path (add-to-list 'load-path "~/.emacs.d/my/"))
-(setq load-path (add-to-list 'load-path "~/.emacs.d/nonpa"))
 
 (load "my-package.el")
 (load "my-auto-complete.el")
@@ -16,6 +15,7 @@
 (load "my-key-bindings.el")
 (load "my-backups.el")
 (load "my-whitespace.el")
+(load "my-evil.el")
 
 ;;; Hide unnecessary interface features
 (setq inhibit-startup-message t)
@@ -73,6 +73,4 @@
       nil
       'fullboth)))
 
-;;; emacs init ends here 
-
-
+;;; emacs init ends here
