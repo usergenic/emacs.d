@@ -26,9 +26,14 @@
 (define-key evil-normal-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-normal-state-map (kbd "C-n") 'evil-next-line)
 (define-key evil-normal-state-map (kbd "C-p") 'evil-previous-line)
+(define-key evil-normal-state-map (kbd "M-p") 'evil-scroll-up)
+(define-key evil-normal-state-map (kbd "M-n") 'evil-scroll-down)
+
 (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-insert-state-map (kbd "C-n") 'evil-next-line)
 (define-key evil-insert-state-map (kbd "C-p") 'evil-previous-line)
+(define-key evil-insert-state-map (kbd "M-p") 'evil-scroll-up)
+(define-key evil-insert-state-map (kbd "M-n") 'evil-scroll-down)
 
 ;; Works around the fact that Evil uses read-event directly when in operator state, which
 ;; doesn't use the key-translation-map.
