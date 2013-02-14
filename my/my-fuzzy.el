@@ -2,5 +2,10 @@
 (require 'fuzzy-find-in-project)
 (fuzzy-find-project-root (textmate-project-root))
 
-(global-set-key (kbd "M-t") 'fuzzy-find-in-project)
+(defun set-fuzzy-find-project-root-to-textmate-project-root  ()
+  "use textmate-project-root function to figure out where fuzzy root should be"
+  (interactive)
+  (fuzzy-find-project-root (textmate-project-root)))
 
+(global-set-key (kbd "M-t") 'fuzzy-find-in-project)
+(global-set-key (kbd "C-c M-t") 'set-fuzzy-find-project-root-to-textmate-project-root)
