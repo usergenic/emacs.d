@@ -38,9 +38,6 @@
 ;;; Change the yes-or-no prompts to single y or n.
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;;; Run server-mode on so shell can emacsclient in
-(server-start)
-
 ;;; Disable emacs tendency to insert # -*- coding: utf-8 -*- into ruby files
 (setq-default ruby-insert-encoding-magic-comment nil)
 
