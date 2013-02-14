@@ -75,4 +75,7 @@
       nil
       'fullboth)))
 
+;;; You don't need to ask me this whenever I'm killing a buffer from client call.
+(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
+
 ;;; emacs init ends here
