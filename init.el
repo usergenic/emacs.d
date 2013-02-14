@@ -18,6 +18,7 @@
 (load "my-backups.el")
 (load "my-whitespace.el")
 (load "my-evil.el")
+(load "my-fuzzy.el")
 
 ;;; Hide unnecessary interface features
 (setq inhibit-startup-message t)
