@@ -20,6 +20,8 @@
 (load "my-evil.el")
 (load "my-fuzzy.el")
 
+(require 'tron-theme)
+
 ;;; Hide unnecessary interface features
 (setq inhibit-startup-message t)
 (if (fboundp 'menu-bar-mode)   (menu-bar-mode -1))
