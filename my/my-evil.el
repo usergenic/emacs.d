@@ -22,8 +22,11 @@
    (t (kbd "C-g"))))
 
 (define-key key-translation-map (kbd "C-g") 'my-esc)
+
+(define-key evil-normal-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-normal-state-map (kbd "C-n") 'evil-next-line)
 (define-key evil-normal-state-map (kbd "C-p") 'evil-previous-line)
+(define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-insert-state-map (kbd "C-n") 'evil-next-line)
 (define-key evil-insert-state-map (kbd "C-p") 'evil-previous-line)
 
