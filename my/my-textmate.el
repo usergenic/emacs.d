@@ -10,6 +10,5 @@
 
 (global-set-key (kbd "M-[") 'textmate-shift-left)
 (global-set-key (kbd "M-]") 'textmate-shift-right)
-(global-set-key (kbd "M-t") 'textmate-goto-file)
 
 ;;; my-textmate ends here
