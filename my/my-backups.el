@@ -16,6 +16,6 @@
 
 (setq create-lockfiles nil)
 
-(auto-save-mode) ; turn it off!
+(auto-save-mode nil) ; turn it off!
 
 ;;; my-backups ends here
