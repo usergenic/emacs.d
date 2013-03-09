@@ -10,6 +10,14 @@
 
 (require 'ido)
 
+; (setq evil-auto-indent nil)
+; (setq c-electric-pound-behavior nil)
+; (setq electric-indent-mode nil)
+; (setq electric-layout-mode nil)
+; (setq electric-pair-mode nil)
+(setq c-tab-always-indent nil)
+(setq c-syntactic-indentation nil)
+
 (load "my-package.el")
 (load "my-auto-complete.el")
 (load "my-textmate.el")
@@ -76,6 +84,7 @@
       'fullboth)))
 
 ;;; You don't need to ask me this whenever I'm killing a buffer from client call.
-(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
+
+(defun server-remove-kill-buffer-hook () (remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)) (add-hook 'server-visit-hook 'server-remove-kill-buffer-hook)
 
 ;;; emacs init ends here
