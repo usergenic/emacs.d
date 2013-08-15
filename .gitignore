@@ -4,4 +4,6 @@ elpa/archives/*
 url/cookies
 backups/*
 semanticdb/*
+console_log.notes
+menu_log.notes
 
