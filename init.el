@@ -19,6 +19,7 @@
 (setq c-tab-always-indent nil)
 (setq c-syntactic-indentation nil)
 
+(load "my-rbenv.el")
 (load "my-package.el")
 (load "my-auto-complete.el")
 (load "my-textmate.el")
