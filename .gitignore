@@ -6,4 +6,6 @@ backups/*
 semanticdb/*
 console_log.notes
 menu_log.notes
+difflog.notes
+.DS_Store
 
