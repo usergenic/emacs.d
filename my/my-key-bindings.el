@@ -6,7 +6,11 @@
 
 ;; Key Bindings
 
-(define-key emacs-lisp-mode-map (kbd "C-c C-c") 'eval-buffer)
+(global-set-key (kbd "C-;") 'do-code-prefix)
+(global-set-key (kbd "C-:") 'do-code-unprefix)
+
+(global-set-key (kbd "C-c o") 'occur)
+(global-set-key (kbd "C-c l") 'loccur)
 
 ;;; my-key-bindings ends here
 

@@ -23,12 +23,14 @@
 
 (define-key key-translation-map (kbd "C-g") 'my-esc)
 
+(define-key evil-normal-state-map (kbd "C-a") 'move-beginning-of-line)
 (define-key evil-normal-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-normal-state-map (kbd "C-n") 'evil-next-line)
 (define-key evil-normal-state-map (kbd "C-p") 'evil-previous-line)
 (define-key evil-normal-state-map (kbd "M-p") 'evil-scroll-up)
 (define-key evil-normal-state-map (kbd "M-n") 'evil-scroll-down)
 
+(define-key evil-insert-state-map (kbd "C-a") 'move-beginning-of-line)
 (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-insert-state-map (kbd "C-n") 'evil-next-line)
 (define-key evil-insert-state-map (kbd "C-p") 'evil-previous-line)
